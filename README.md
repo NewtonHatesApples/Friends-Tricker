@@ -1,7 +1,7 @@
 # Friends-Tricker
 Simple python programs to trick friends!
 
-## **_psg.py_**
+## **_psg_tricker.py_**
 
 To start, do 
 ```pip install PyAutoGUI``` and ```pip install sys```.
