@@ -1,5 +1,5 @@
 # Friends-Tricker
-Simple python programs to trick friends!
+Simple python programs to trick friends! (Still updating, 1/5)
 
 ## **_psg_tricker.py_**
 
