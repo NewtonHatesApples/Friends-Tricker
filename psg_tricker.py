@@ -8,7 +8,6 @@ layout_init = [
 ]
 
 Psg.theme_global('TealMono')
-Psg.set_global_icon('mr_bean.png')
 window_init = Psg.Window("Are you dumb?", layout=layout_init, size=(300, 200))
 i = 0
 kill = False
@@ -65,7 +64,7 @@ def no_loop():
             [Psg.Text('Are you dumb?', expand_x=True)],
             [Psg.Button('Yes', expand_x=True)], [Psg.Button('No', expand_x=True)]
         ]
-        window_no = Psg.Window('Are you dumb?', layout=layout, size=(300, 200), icon='Screenshot.png',
+        window_no = Psg.Window('Are you dumb?', layout=layout, size=(300, 200),
                                relative_location=(20 + 20 * i, 20 + 20 * i))
         event_no, values_no = window_no.read()
         while True:
@@ -89,7 +88,7 @@ while True:
         create_yes()
         break
     elif event_init == 'No':
-        no_loop()
+        create_no()
     elif event_init == Psg.WINDOW_CLOSED:
         window_init.close()
-        break
+        no_loop()
